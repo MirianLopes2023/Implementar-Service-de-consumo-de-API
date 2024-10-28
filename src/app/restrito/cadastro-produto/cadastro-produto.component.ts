@@ -9,8 +9,7 @@ import { ProdutoService } from 'src/app/produto.service';
 })
 export class CadastroProdutoComponent implements OnInit {
   public produto: Produto = new Produto(0, "", "", "", 0);
-  constructor(private _produtoService: ProdutoService, private
-router: Router) { }
+  constructor(private _produtoService: ProdutoService, private router: Router) { }
   ngOnInit(): void {
   }
   cadastrar() {

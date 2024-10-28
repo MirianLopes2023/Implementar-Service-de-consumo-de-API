@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
 /*Importações Angular Material*/
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -21,10 +22,11 @@ import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { RestritoComponent } from './restrito/restrito.component';
-import { AtualizaProdutoComponent } from './restrito/atualiza-produto/atualizaproduto.component';
-import { CadastroProdutoComponent } from './restrito/cadastro-produto/cadastroproduto.component';
-import { ListaProdutoComponent } from './restrito/lista-produto/listaproduto.component';
-import { MenuRestritoComponent } from './restrito/menu-restrito/menurestrito.component';
+import { AtualizaProdutoComponent } from './restrito/atualiza-produto/atualiza-produto.component';
+import { CadastroProdutoComponent } from './restrito/cadastro-produto/cadastro-produto.component';
+import { ListaProdutoComponent } from './restrito/lista-produto/lista-produto.component';
+import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +55,8 @@ import { MenuRestritoComponent } from './restrito/menu-restrito/menurestrito.com
     RestritoRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]
